@@ -221,42 +221,45 @@ button:hover {
 .typewriter h2 {
     color: #fff;
     font-family: monospace;
-    overflow: hidden; /* Skrije vsebino do animacije */
-    border-right: .15em solid white; /* Učinek kurzorja */
-    white-space: nowrap; /* Osnova: vse na eni vrstici */
+    overflow: hidden; /* Hide the content until the animation starts */
+    border-right: .15em solid white; /* Typewriter cursor */
+    white-space: nowrap; /* Keep everything in a single line by default */
     margin: 0 auto;
     letter-spacing: .15em;
+    display: inline-block; /* Ensure the cursor is at the end of the current line */
     animation: 
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
 }
 
-/* Animacija pisanja */
+/* Animation for typing effect */
 @keyframes typing {
     from { width: 0; }
-    to { width: 100%; } /* Dopolni celotno širino */
+    to { width: 100%; } /* Fill the width with the text */
 }
 
-/* Animacija utripanja kurzorja */
+/* Animation for the cursor blinking */
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: white; }
 }
 
-/* Media query za manjše zaslone */
+/* Adjust for smaller screens */
 @media (max-width: 768px) {
   .typewriter h2 {
-    font-size: smaller; /* Zmanjša velikost na mobilnikih */
-    white-space: normal; /* Dovoli prelom v več vrstic */
-    word-wrap: break-word; /* Prelomi dolge besede */
-    text-align: center; /* Centriranje besedila */
-    max-width: 90%; /* Omeji širino besedila na mobilnih napravah */
+    font-size: smaller; /* Reduce font size for smaller screens */
+    white-space: normal; /* Allow wrapping of text */
+    word-wrap: break-word; /* Allow breaking long words */
+    text-align: center; /* Center the text */
+    max-width: 90%; /* Limit the width to 90% on small screens */
+    display: block; /* Change to block so cursor only applies to current line */
+    animation: 
+      typing 5s steps(40, end), /* Adjust animation speed */
+      blink-caret .5s step-end infinite;
   }
 
-  /* Preverimo, da se animacija prilagodi manjšim zaslonom */
+  /* Optional: Adjust the line height if text is breaking into multiple lines */
   .typewriter h2 {
-    animation: 
-      typing 5s steps(40, end), /* Podaljšaj čas animacije, če je besedilo daljše */
-      blink-caret .5s step-end infinite;
+    line-height: 1.5; /* Adds some space between the lines */
   }
 }
