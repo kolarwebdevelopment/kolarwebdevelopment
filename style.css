@@ -248,8 +248,15 @@ button:hover {
   .typewriter h2 {
     font-size: smaller; /* Zmanjša velikost na mobilnikih */
     white-space: normal; /* Dovoli prelom v več vrstic */
-    overflow-wrap: break-word; /* Prelomi dolge besede */
+    word-wrap: break-word; /* Prelomi dolge besede */
     text-align: center; /* Centriranje besedila */
+    max-width: 90%; /* Omeji širino besedila na mobilnih napravah */
+  }
+
+  /* Preverimo, da se animacija prilagodi manjšim zaslonom */
+  .typewriter h2 {
+    animation: 
+      typing 5s steps(40, end), /* Podaljšaj čas animacije, če je besedilo daljše */
+      blink-caret .5s step-end infinite;
   }
 }
-
