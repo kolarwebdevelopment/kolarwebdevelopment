@@ -216,6 +216,11 @@ button:hover {
     footer p {
       font-size: 0.9em; /* Manjše besedilo noge na mobilnih napravah */
     }
+      .typewriter h2 {
+    font-size: smaller; /* Adjust font size */
+    white-space: normal; /* Allow text to wrap to a new line */
+    text-align: center; /* Center the wrapped text */
+  }
   }
   
   /* DEMO-SPECIFIC STYLES */
