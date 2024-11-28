@@ -218,7 +218,8 @@ button:hover {
     }
       .typewriter h2 {
     font-size: smaller; /* Adjust font size */
-    white-space: normal; /* Allow text to wrap to a new line */
+    white-space: normal; /* Dovoli prelom v več vrstic */
+    overflow-wrap: break-word; /* Prelomi dolge besede */
     text-align: center; /* Center the wrapped text */
   }
   }
