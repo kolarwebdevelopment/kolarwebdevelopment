@@ -226,7 +226,7 @@ button:hover {
     white-space: nowrap; /* Keep everything in a single line by default */
     margin: 0 auto;
     letter-spacing: .15em;
-    display: inline-block; /* Ensure the cursor is at the end of the current line */
+    display: inline-block; /* Ensures the cursor stays at the end of the line */
     animation: 
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
@@ -252,7 +252,7 @@ button:hover {
     word-wrap: break-word; /* Allow breaking long words */
     text-align: center; /* Center the text */
     max-width: 90%; /* Limit the width to 90% on small screens */
-    display: block; /* Change to block so cursor only applies to current line */
+    display: inline-block; /* Ensures cursor stays on current line */
     animation: 
       typing 5s steps(40, end), /* Adjust animation speed */
       blink-caret .5s step-end infinite;
@@ -261,5 +261,11 @@ button:hover {
   /* Optional: Adjust the line height if text is breaking into multiple lines */
   .typewriter h2 {
     line-height: 1.5; /* Adds some space between the lines */
+  }
+
+  /* Ensures that the width of the text does not overflow */
+  .typewriter h2 span {
+    display: inline-block; /* Each word should be its own block */
+    max-width: 100%; /* Make sure each word fits within the container */
   }
 }
