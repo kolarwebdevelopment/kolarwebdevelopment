@@ -70,60 +70,35 @@ h2 {
 }
 
 .service-list {
-  display: flex;
-  flex-wrap: wrap; /* Allows wrapping of items */
-  gap: 20px;       /* Adds spacing between items */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .service {
-  flex: 1 1 100%;  /* Full width on smaller screens */
-  text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
 }
 
-/* Media Query for larger screens */
-@media (min-width: 768px) {
-  .service {
-    flex: 1;       /* Equal width for all services */
-    text-align: left;
-  }
+.portfolio-grid {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
-
 
 .portfolio-item {
-  display: flex;
-  flex-direction: column; /* Stacks image and heading vertically */
-  align-items: center;    /* Centers horizontally */
-  justify-content: center; /* Centers vertically (if needed) */
-  text-align: center;     /* Centers text inside the container */
-  gap: 10px;              /* Adds spacing between items */
-  width: 100%;            /* Ensures full width for alignment */
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 .portfolio-item img {
-  max-width: 300px;
-  height: auto;
+    max-width: 100%;
+    border-radius: 5px;
 }
-
-.portfolio-item h4 {
-  font-size: 1.2rem;
-}
-
-
-
-/* Media Query for mobile */
-@media (max-width: 768px) {
-  .portfolio-item img {
-    max-width: 100%;  /* Full width for smaller screens */
-  }
-  .portfolio-item h4 {
-    font-size: 1.5rem; /* Increase font size further */
-  }
-}
-
-
-
-
-
 
 form {
     display: flex;
@@ -293,22 +268,4 @@ button:hover {
     display: inline-block; /* Each word should be its own block */
     max-width: 100%; /* Make sure each word fits within the container */
   }
-}
-/* button to scroll to top */
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;          /* Places button above all other elements */
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  padding: 15px;
-  border-radius: 50%;
-     opacity: 1 !important;
-    visibility: visible !important;
-  font-size: 18px;
-  cursor: pointer;
-  display: none;          /* Hidden by default */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
