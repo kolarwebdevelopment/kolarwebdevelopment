@@ -91,21 +91,23 @@ h2 {
 
 .portfolio-item {
   display: flex;
-  flex-direction: column; /* Stack image and heading vertically */
-  align-items: center;    /* Center them horizontally */
-  text-align: center;     /* Center text inside the container */
+  flex-direction: column; /* Stacks image and heading vertically */
+  align-items: center;    /* Centers horizontally */
+  justify-content: center; /* Centers vertically (if needed) */
+  text-align: center;     /* Centers text inside the container */
+  gap: 10px;              /* Adds spacing between items */
+  width: 100%;            /* Ensures full width for alignment */
 }
 
 .portfolio-item img {
-  width: 100%;
   max-width: 300px;
   height: auto;
-  margin-bottom: 10px;    /* Add space between image and heading */
 }
 
 .portfolio-item h4 {
   font-size: 1.2rem;
 }
+
 
 
 /* Media Query for mobile */
@@ -120,12 +122,7 @@ h2 {
 
 
 
-.portfolio-item {
-    width: 30%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-}
+
 
 
 form {
