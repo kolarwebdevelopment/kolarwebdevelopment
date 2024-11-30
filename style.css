@@ -83,10 +83,17 @@ h2 {
 }
 
 .portfolio-grid {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center;    /* Centers items horizontally */
+  gap: 20px;              /* Adds space between items */
 }
+
+.portfolio-item img {
+  max-width: 100%;        /* Ensures images are responsive */
+  height: auto;
+}
+
 
 .portfolio-item {
     width: 30%;
@@ -95,10 +102,6 @@ h2 {
     border-radius: 5px;
 }
 
-.portfolio-item img {
-    max-width: 100%;
-    border-radius: 5px;
-}
 
 form {
     display: flex;
