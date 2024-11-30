@@ -89,16 +89,24 @@ h2 {
 }
 
 
+.portfolio-item {
+  display: flex;
+  flex-direction: column; /* Stack image and heading vertically */
+  align-items: center;    /* Center them horizontally */
+  text-align: center;     /* Center text inside the container */
+}
+
 .portfolio-item img {
-  width: 100%;         /* Ensures images are responsive */
-  max-width: 300px;    /* Limit maximum size */
+  width: 100%;
+  max-width: 300px;
   height: auto;
+  margin-bottom: 10px;    /* Add space between image and heading */
 }
 
 .portfolio-item h4 {
-  font-size: 1.2rem;   /* Larger text size for mobile */
-  text-align: center;
+  font-size: 1.2rem;
 }
+
 
 /* Media Query for mobile */
 @media (max-width: 768px) {
