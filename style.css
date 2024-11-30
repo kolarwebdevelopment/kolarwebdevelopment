@@ -70,17 +70,24 @@ h2 {
 }
 
 .service-list {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of items */
+  gap: 20px;       /* Adds spacing between items */
 }
 
 .service {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    width: 30%;
+  flex: 1 1 100%;  /* Full width on smaller screens */
+  text-align: center;
 }
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+  .service {
+    flex: 1;       /* Equal width for all services */
+    text-align: left;
+  }
+}
+
 
 .portfolio-grid {
   display: flex;
