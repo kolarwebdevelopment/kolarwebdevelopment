@@ -791,3 +791,171 @@ ul li {
       font-size: 14px;
   }
 }
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    /* General Body */
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 0;
+    }
+
+    /* Header Adjustments */
+    .header {
+        padding: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 24px;
+        gap: 5px;
+    }
+
+    .logo-icon {
+        font-size: 30px;
+    }
+
+    .menu-icon {
+        right: 10px;
+        font-size: 24px;
+    }
+
+    .tagline {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    /* Dropdown Menu */
+    .dropdown-menu {
+        top: 50px;
+        right: 10px;
+        width: 90%;
+    }
+
+    /* Why Choose Us Section */
+    .why-choose-us {
+        height: auto;
+        padding: 20px;
+    }
+
+    .content h2 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Who We Are Section */
+    .who-we-are {
+        padding: 40px 20px;
+    }
+
+    .who-we-are h2 {
+        font-size: 28px;
+    }
+
+    .who-we-are p {
+        font-size: 14px;
+    }
+
+    /* Our Services Section */
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .service-card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+    }
+
+    /* Order a Website Section */
+    .order-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-left, .order-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .pricing-card {
+        width: 100%;
+    }
+
+    .order-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-item {
+        padding: 15px;
+    }
+
+    .contact-item h4 {
+        font-size: 18px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+
+    /* Footer Section */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Scroll to Top Button */
+    .scroll-to-top-btn {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
