@@ -1,159 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="wDMhK74EJkj1ZKbOGG0Cj9Cs5pEYakb1s1D7rCYJt2E" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4978930198892192"
-     crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kolar web development</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Professional web development, graphic design, and e-commerce services. We create custom websites, simple web designs, logos, branding, and responsive solutions tailored to your business needs. Get a professional, creative, and user-friendly website today!">
-    <meta name="keywords" content="web development, graphic design, web design, simple web design, HTML, CSS, JavaScript, e-commerce, online stores, branding, logo design, website creation, custom websites, responsive design, UX/UI design, digital marketing, website optimization, front-end development, back-end development, creative design, business websites, professional websites">
-    <meta name="author" content="Kolar Web Development">
-    <link rel="icon" href="image/kolarwebdevelopment logo.jpg" type="image/png">
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Kolar Web Development",
-  "url": "https://kolarwebdev.com",
-  "logo": "image/kolarwebdevelopment logo.jpg"
-}
-</script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kolar Web Development</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a href="index.html" style="text-decoration: none;color: white;">
-                <img src="image/kolarwebdevelopment logo.jpg" alt="">
-                <h1 style="text-decoration: none; color: aqua;font-family: cursive;">Kolar Web Development</h1></a>
-            <nav>
-                <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="Portfolio.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Interactive Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-icon">&lt;K&gt;</span>
+        <span class="logo-text">Kolar Web Development</span>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+    <p class="tagline">Innovative Web Solutions for Your Business</p>
+    <nav class="dropdown-menu">
+      <a href="#about">Who We Are</a>
+      <a href="#services">Our Services</a>
+      <a href="#order">Order a Website</a>
+      <a href="#contact">Get in Touch</a>
+    </nav>
+  </header>
 
-    <section id="hero">
-        <div class="container">
-            <div class="typewriter">
-                <h2>Building websites that drive to success.</h2>
-              </div>
-            <p>Have you ever dreamed about a perfect website for your business? </p>
-            <p style=" font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;"> <strong> We will make the dream come true. </strong> </p>
-            <a href="#contact" class="cta-button">Get Started</a>
-            <a href="https://www.paypal.com/ncp/payment/NX6W9RJ56J7LU" class="cta-button" target="_blank">Donate</a>
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-us">
+    <div class="overlay">
+      <div class="content">
+        <h2>Why Choose Us</h2>
+        <p>
+          At Kolar Web Development, we deliver innovative, custom websites that help your business thrive online. We combine expertise, creativity, and technology for unmatched results.
+        </p>
+      </div>
+    </div>
+  </section>
+   <!-- Who We Are Section -->
+   <section id="about" class="who-we-are">
+    <div class="container">
+      <h2>Who we are</h2>
+      <p>
+        At Kolar Web Development, we are passionate about creating simple yet effective websites to help businesses grow online. Founded by a high school student with a deep interest in web development and technology, Kolar Web Development aims to provide affordable and quality websites tailored to the needs of small businesses, entrepreneurs, and individuals.
+      </p>
+      <p>
+        With a foundation in HTML, CSS, and a growing knowledge of JavaScript and MySQL, we’re continuously learning and evolving our skills to stay at the forefront of the web development field. This website was created not only to showcase these skills but also to help expand our expertise and gain real-world experience in the field of web development.
+      </p>
+      <p>
+        Our mission is to offer professional web development services while continually improving and learning new technologies. By starting small, we aim to build a strong foundation for a full-fledged business in the future. Join us on our journey as we grow, learn, and help you succeed online.
+      </p>
+    </div>
+  </section>
+<!-- Our Services Section -->
+<section id="services" class="our-services">
+  <div class="services-container">
+    <div class="service-card">
+      <img src="images/design.jpg" alt="Web Design" class="service-img">
+      <div class="service-info">
+        <h3>Custom Web Design</h3>
+        <p>We craft beautiful, responsive websites that captivate your audience and represent your brand effectively.</p>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="images/development.jpg" alt="Web Development" class="service-img">
+      <div class="service-info">
+        <h3>Web Development</h3>
+        <p>Our development services include everything from simple websites to complex web applications, all optimized for performance and scalability.</p>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="images/seo.jpg" alt="SEO Optimization" class="service-img">
+      <div class="service-info">
+        <h3>SEO Optimization</h3>
+        <p>We use proven SEO techniques to help your website rank higher in search engines and increase organic traffic.</p>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="images/support.png" alt="Maintenance & Support" class="service-img">
+      <div class="service-info">
+        <h3>Ongoing Support</h3>
+        <p>We offer ongoing support and maintenance to ensure your website remains up-to-date, secure, and fully functional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Order a Website Section -->
+<section id="order" class="order-website">
+  <div class="order-container">
+    <div class="order-left">
+      <h2>Get Your Website Today</h2>
+      <p>Start your journey with a professionally designed website that will boost your online presence and help your business grow. Our process is simple, and we’re here to guide you every step of the way.</p>
+      <div class="order-pricing">
+        <h3>Pricing Plans</h3>
+        <div class="pricing-card">
+          <h4>Starting Website</h4>
+          <p class="price">$10</p>
+          <ul>
+            <li>Up to 5 pages</li>
+            <li>Responsive design</li>
+            <li>No SEO optimization</li>
+            <li>No support</li>
+          </ul>
+          <a href="https://buy.stripe.com/3cseVh4JK43W4Vy5kk" target="_blank"><button class="order-btn">Order Now</button></a>
         </div>
-    </section>
-    <section>
-        <div class="bgphoto" style="background-image: url('image/images.jpg') ; color:  rgb(0, 247, 255);">
-            <br>
-            <br>
-            <br>
-            <br>
-          <h2>Why choose us?</h2>
-          <h3>Many years of experience.</h3>
-          <h3>Many websites built.</h3>
-          <h3>Friendly service.
-            <br>
-            <br>
-            <br>
-            <br>
-          </h3>
+        <div class="pricing-card">
+          <h4>Simple Website</h4>
+          <p class="price">$50</p>
+          <ul>
+            <li>Up to 5 pages</li>
+            <li>Responsive design</li>
+            <li>Basic SEO optimization</li>
+            <li>No support</li>
+          </ul>
+          <a href="https://buy.stripe.com/8wM9AX9001VOafS8wx" target="_blank"><button class="order-btn">Order Now</button></a>
         </div>
-    </section>
+        <div class="pricing-card">
+          <h4>Basic Website</h4>
+          <p class="price">$199</p>
+          <ul>
+            <li>Up to 5 pages</li>
+            <li>Responsive design</li>
+            <li>Basic SEO optimization</li>
+            <li>1-month support</li>
+          </ul>
+          <a href="https://buy.stripe.com/fZe00n1xy8kcbjW5km" target="_blank"><button class="order-btn">Order Now</button></a>
+        </div>
+        <div class="pricing-card">
+          <h4>Advanced Website</h4>
+          <p class="price">$399</p>
+          <ul>
+            <li>Up to 10 pages</li>
+            <li>Custom design</li>
+            <li>Advanced SEO optimization</li>
+            <li>2-month support</li>
+          </ul>
+          <a href="https://buy.stripe.com/4gw9AXdgg43W5ZC6or" target="_blank"><button class="order-btn">Order Now</button></a>
+        </div>
+        <div class="pricing-card">
+          <h4>Premium Website</h4>
+          <p class="price">$599</p>
+          <ul>
+            <li>Unlimited pages</li>
+            <li>Custom branding & design</li>
+            <li>Complete SEO & Analytics</li>
+            <li>Ongoing support</li>
+          </ul>
+          <a href="https://buy.stripe.com/eVa8wT3FGaskgEg5ko" target="_blank"><button class="order-btn">Order Now</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="order-right">
+      <h3>How It Works</h3>
+      <ol>
+        <li><strong>Step 1:</strong> Choose your plan and click "Order Now" to get started.</li>
+        <li><strong>Step 2:</strong> Fill out the brief form to tell us more about your business and goals.</li>
+        <li><strong>Step 3:</strong> Our team will design your site and send you updates regularly.</li>
+        <li><strong>Step 4:</strong> Launch your website and start growing your business online.</li>
+      </ol>
+      <h3>Common Questions</h3>
+      <p><strong>What if I dont trust this site?</strong></p>
+      <p>Thats not a problem! We also offer for you to pay after we finish the project. We will send you a preview, which you can't save and if you like it you can pay and then we send you all the files,...</p>
+      <p><strong>Can my website be totally custom?</strong></p>
+      <p>Of course! Just <a href="#contact" target="_blank" class="contact-link">contact us</a> and tell us everything you want so we can choose the price.</p>
+      <h3>Have Questions?</h3>
+      <p>Feel free to <a href="#contact" class="contact-link">contact us</a> if you need assistance or have any questions about our services.</p>
+      </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-left">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, need support, or would like to discuss your next web project, feel free to reach out to us through any of the methods below. We're here to help!</p>
+    </div>
+    <div class="contact-right">
+      <h3>Get In Touch</h3>
+      <div class="contact-info">
+        <div class="contact-item">
+          <h4>Email</h4>
+          <p><a href="mailto:kolarprogramming@gmail.com" target="_blank">kolarprogramming@gmail.com</a></p>
+        </div>
+        <div class="contact-item">
+          <h4>Phone</h4>
+          <p><a href="tel:+38670398793">+386 70 398 793</a></p>
+        </div>
+        <div class="contact-item">
+          <h4>LinkedIn</h4>
+          <p><a href="https://www.linkedin.com/in/kolar-web-development-60536933b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsW16Fll0SkC%2FO9ADpiging%3D%3D" target="_blank">Kolar web development</a></p>
+        </div>
+        <div class="contact-item">
+          <h4>Discord</h4>
+          <p><a href="https://discord.gg/qXTC8EdS3M" target="_blank">Discord server</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="services" class="section">
-        <div class="container">
-            <h2 style="color: aqua;">Our Services</h2>
-            <div class="service-list">
-                <div class="service">
-                    <h3>Custom Web Design</h3>
-                    <p>We create responsive, custom designs that reflect your brand identity.</p>
-                </div>
-                <div class="service">
-                    <h3>E-Commerce Solutions</h3>
-                    <p>Developing secure and scalable e-commerce platforms for online success.</p>
-                </div>
-                <div class="service">
-                    <h3>Graphic design and branding</h3>
-                    <p>Elevate your brand with our expert Graphic design and branding.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-<hr style="border: 0; 
-border-top: 2px solid black; 
-width: 50%; 
-margin: 20px auto;">
-    <section id="portfolio" class="section">
-        <center></center>
-        <div class="container" >
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <a href="Portfolio.html#simplewebdesign">
-                    <img src="image/make-a-website-for-you.jpg" alt="Project 1">
-                    </a>
-                    <h4>Simple web design</h4>
-                </div>
-                <div class="portfolio-item">
-                    <a href="Portfolio.html#ecommerce">
-                    <img src="image/portfolio2.jfif" alt="Project 2">
-                </a>
-                    <h4>E-commerce</h4>
-                </div>
-                <div class="portfolio-item">
-                    <a href="Portfolio.html#graphic">
-                        <img src="image/man-designing-logos-on-mac.avif" alt="Project 3">
-                    </a>
-                        <h4>Graphic design and branding</h4>
-                </center>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr style="border: 0; 
-border-top: 2px solid black; 
-width: 50%; 
-margin: 20px auto;">
-    <section id="contact" class="contact">
-        <div class="container" >
-            <h2 style="color: aqua;">Contact us</h2>
-            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Click on the link and send us a message to get started with your project! </p>
-                <p>Gmail: kolarprogramming@gmail.com</p> <p>Discord: https://discord.gg/qXTC8EdS3M </p>
-            <div class="button" style="text-decoration: none; color: #000000;font-size: 20px;">
-            <a href="mailto:kolarprogramming@gmail.com" target="_blank" ><p>Gmail       </p> </a> 
-            <a href="https://discord.gg/qXTC8EdS3M" target="_blank" >   <p>    Discord</p></a>
-            </div>
-            <style>
-              .button a {
-    color: aqua; /* Default color */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .button a:hover {
-    color: rgb(0, 0, 0); /* Change to black on hover */
-  }
-            </style>
-        </div>
-    </section>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Footer Left: Contact Info and Social Links -->
+    <div class="footer-left">
+      <h3>Contact Information</h3>
+      <p>If you have any questions or need support, reach out to us:</p>
+      <ul class="contact-list">
+        <li><a href="mailto:kolarprogramming@gmail.com">kolarprogramming@gmail.com</a></li>
+        <li><a href="tel:+38670398793">+386 70 398 793</a></li>
+        <li><a href="https://www.linkedin.com/in/kolar-web-development-60536933b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsW16Fll0SkC%2FO9ADpiging%3D%3D" target="_blank">LinkedIn</a></li>
+        <li><a href="https://discord.gg/qXTC8EdS3M" target="_blank">Discord</a></li>
+      </ul>
+    </div>
 
-    <hr style="border: 0; 
-border-top: 2px solid black; 
-width: 50%; 
-margin: 20px auto;">
-<p>I still have some issues with the website scaling on some devices so please be patient:)</p>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Kolar Web Development. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <!-- Footer Center: Quick Links -->
+    <div class="footer-center">
+      <h3>Quick Links</h3>
+      <ul class="quick-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#order">Order Your Website</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" class="scroll-to-top-btn">↑</button>
+
+    <!-- Footer Right: Copyright Notice -->
+    <div class="footer-right">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/kolar-web-development-60536933b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsW16Fll0SkC%2FO9ADpiging%3D%3D" target="_blank" class="social-icon linkedin">LinkedIn</a>
+        <a href="https://discord.gg/qXTC8EdS3M" target="_blank" class="social-icon discord">Discord</a>
+        <a href="" target="_blank" class="social-icon discord">Coming soon!</a>
+      </div>
+      <p>&copy; 2024 Kolar Web Development. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
 </body>
 </html>
