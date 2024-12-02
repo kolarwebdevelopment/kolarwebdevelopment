@@ -686,3 +686,108 @@ ul li {
 .scroll-to-top-btn:focus {
   outline: none;
 }
+/* Mobile-first Media Queries */
+@media (max-width: 768px) {
+  /* Header Layout */
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .logo {
+      font-size: 28px;
+      margin-bottom: 10px;
+  }
+
+  .logo-icon {
+      font-size: 35px;
+  }
+
+  .logo-text {
+      font-size: 22px;
+  }
+
+  .menu-icon {
+      font-size: 25px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+  }
+
+  .tagline {
+      font-size: 16px;
+  }
+
+  /* Why Choose Us Section */
+  .why-choose-us {
+      height: auto;
+      padding: 40px 20px;
+  }
+
+  .overlay {
+      padding: 20px;
+  }
+
+  .content h2 {
+      font-size: 28px;
+  }
+
+  .content p {
+      font-size: 16px;
+  }
+
+  /* Who We Are Section */
+  .who-we-are {
+      padding: 40px 20px;
+  }
+
+  .who-we-are h2 {
+      font-size: 32px;
+  }
+
+  .who-we-are p {
+      font-size: 16px;
+      max-width: 100%;
+      text-align: justify;
+      line-height: 1.6;
+  }
+
+  /* Our Services Section */
+  .services-container {
+      grid-template-columns: 1fr; /* One column for mobile */
+  }
+
+  .service-card {
+      padding: 20px;
+      max-width: 90%;
+      margin: 0 auto;
+  }
+
+  .service-card h3 {
+      font-size: 20px;
+  }
+
+  .service-card p {
+      font-size: 14px;
+  }
+
+  /* Footer */
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .footer-left p, .footer-center p, .footer-right p {
+      font-size: 14px;
+  }
+
+  .contact-list li a, .quick-links li a {
+      font-size: 14px;
+  }
+}
